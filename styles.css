@@ -1,37 +1,65 @@
-<!DOCTYPE html>
-<html lang="en"
-  <head>
-  <metacharset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documen</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-    <body>
-      <header>
-        <div class="container">
-          <h1>Meu Currículo</h1>
-        </div>
-      </header>
-        <div class="container main-content">
-        <div class="profile-info">
-          <img src="fer.jpg" alt="Foto de Perfil" class="profile-img">
-          <h1>Fernanda da Silva Lima</h1>
-          <p><strong>Endereço:</strong></strong>452 Rua Kaiju preto e branco 213, Bairro Ayrton Senna </p>
-          <p><strong> Email:</strong> da567837@gmail.com</p>
-          <p><strong>Telefone:</strong>(41) 88744-3493</p>
-        </div>
-        <div class="courses">
-          <h2>Cursos Realizados</h2>
-      <ul>
-          <li>Curso Inglês fluente-ensino skif - 2012</li>
-          <li>App.Office profissionalizante-2019</li> 
-          <li>Eletromecânica- 2020</li>
-     </ul>  
-  </div>
-   <div class="salary expectation">
-     <h2>Pretensão salarial</h2>
-      <p>R$100000,000</p>
-  </div>
- </div>
-</body>
-</html>
+body{
+   font-family:Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+  background-color:#f4f4f4;
+}
+.container{
+    width: 80%; 
+    margin:auto;
+    overflow:hiden;
+  }
+ header{
+   background:#4CAF50
+   color:#fff
+   padding:20px 0;
+   border-bottom: #3e8e41 3px solid;
+   position:relative;
+}
+header h1{
+  margin: 0;
+  padding: 0 20px;
+  display: inline-block;
+}
+.profile-img{
+  position: absolute;
+  top:20px;
+  right:20px;
+  width:150px;
+  height: 150px;
+  border-radius:50%
+  border: 3px solid #fff;
+}
+.main-content{
+  padding:20px;
+  background:#fff
+  margin-top:20px
+  border-radius:10px;
+  box-shadow 0 0 10px rgba(0,0,0,0.1);
+}
+.profile-info{
+  overflow:hidden;
+}
+.profile-info h1{
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.profile-info p {
+  color: #666;
+}
+.courses h2, .salary-expectation h2 {
+  color: #4CAF50;
+}
+.courses ul{
+  list-style : none;
+  padding: 0;
+}
+.courses li{
+  background: #e8f5e9;
+  margin: 5px 0;
+  padding: 10px;
+  border-left: #4CAF50 5px solid;
+  color: #333
+}
+  
